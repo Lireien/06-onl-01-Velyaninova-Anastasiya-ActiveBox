@@ -25,9 +25,7 @@
   align-items: center;
   padding: 45px 0;
 }
-@media (max-width: 841px) {
-  display: none;
-}
+
 .navigation__menu-item {
   margin: 0 15px;
   padding: 0 15px;
@@ -138,13 +136,24 @@
 
 .masthead-content {
   align-self: center;
+  justify-content: center;
+  margin: auto;
 }
 .masthead__title {
   color: #ffffff;
   text-transform: uppercase;
   max-width: 861px;
   text-align: center;
+  margin: 0 auto;
 }
 .masthead__subtitle {
+  max-width: 912px;
   color: #ffffff;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.masthead__button {
+  max-width: 200px;
+  margin: 37px auto;
 }

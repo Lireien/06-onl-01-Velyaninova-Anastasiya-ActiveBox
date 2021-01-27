@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   list-style: none;
   margin: 0;
@@ -26,7 +27,7 @@ html {
 h1 {
   font-family: "Open Sans";
   font-weight: 700;
-  font-size: 65px;
+  font-size: 4rem;
   font-style: normal;
   line-height: 71px;
 }
@@ -34,7 +35,7 @@ h1 {
 h2 {
   font-family: "Raleway";
   font-weight: 400;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-style: normal;
   line-height: 33px;
 }
@@ -42,6 +43,21 @@ h2 {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.button {
+  display: block;
+  background-color: #e84545;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 21px;
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: #ffffff;
+  border-radius: 2px;
 }
 
 .masthead {
@@ -98,11 +114,29 @@ a {
   transform: skew(1.2);
 }
 
+/* Гамбургер-меню  */
+.masthead-content {
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+}
+
 .masthead__title {
   color: #ffffff;
   text-transform: uppercase;
+  max-width: 861px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .masthead__subtitle {
+  max-width: 912px;
   color: #ffffff;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.masthead__button {
+  max-width: 200px;
+  margin: 37px auto;
 }
