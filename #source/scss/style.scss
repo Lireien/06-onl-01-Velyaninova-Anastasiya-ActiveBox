@@ -1,0 +1,40 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  height: 100%;
+  font-family: 'Cardo', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.wrapper {
+  min-height: 100vh;
+}
+h1 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 65px;
+  font-style: normal;
+  line-height: 71px;
+}
+h2 {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 33px;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+@import 'masthead.scss';
