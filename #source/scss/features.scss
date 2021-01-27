@@ -1,0 +1,29 @@
+.features__card-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 47px -15px 124px -15px;
+
+}
+.features__card{
+  max-width: 296px;
+  margin: 74px 15px 0 15px;
+  
+}
+.features__img{
+  text-align: center;
+  margin: 0 auto;
+}
+.fearures__card-titile{
+  text-align: center;
+  margin: 34px auto 25px auto;
+  color: #2d3033;
+  text-transform: uppercase;
+
+
+}
+.features__card-description{
+  color: #6c7279;
+  text-align: center;
+}

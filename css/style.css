@@ -14,6 +14,10 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
+main {
+  width: 100%;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -38,6 +42,21 @@ h2 {
   font-size: 1.375rem;
   font-style: normal;
   line-height: 33px;
+}
+
+h3 {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 0.875rem;
+  font-style: normal;
+}
+
+p {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8745rem;
+  line-height: 21px;
 }
 
 a {
@@ -139,4 +158,34 @@ a {
 .masthead__button {
   max-width: 200px;
   margin: 37px auto;
+}
+
+.features__card-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 47px -15px 124px -15px;
+}
+
+.features__card {
+  max-width: 296px;
+  margin: 74px 15px 0 15px;
+}
+
+.features__img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.fearures__card-titile {
+  text-align: center;
+  margin: 34px auto 25px auto;
+  color: #2d3033;
+  text-transform: uppercase;
+}
+
+.features__card-description {
+  color: #6c7279;
+  text-align: center;
 }
