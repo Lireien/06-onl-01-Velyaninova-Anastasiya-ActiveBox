@@ -1,0 +1,23 @@
+.download {
+  width: 100%;
+}
+.download__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download__title {
+  margin-top: 100px;
+  color: #2d3033;
+  font-size: 28px;
+  font-weight: 300;
+}
+.download__subtitle {
+  font-weight: 700;
+  color: #2d3033;
+}
+
+.download__button {
+  
+}
