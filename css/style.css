@@ -104,6 +104,11 @@ a {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
 }
 
 .header__container {
@@ -148,7 +153,6 @@ a {
 
 .navigation__menu-link:hover {
   opacity: 1;
-  transform: skew(1.2);
 }
 
 /* Гамбургер-меню  */
@@ -156,6 +160,7 @@ a {
   align-self: center;
   justify-content: center;
   margin: auto;
+  width: 100%;
 }
 
 .masthead__title {
@@ -176,6 +181,24 @@ a {
 .masthead__button {
   max-width: 200px;
   margin: 37px auto;
+}
+
+.masthead__button:hover {
+  animation: blink 2s 0.5s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    background-color: #e84545;
+    color: #ffffff;
+  }
+  to {
+    background-color: #ffffff;
+    color: #e84545;
+  }
+}
+.features {
+  width: 100%;
 }
 
 .features__card-box {
@@ -272,11 +295,17 @@ a {
   display: none;
 }
 
+.team {
+  width: 100%;
+}
+
 .staff__table {
   display: flex;
+  flex-direction: row;
   margin: 0 -15px;
   padding-top: 100px;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
 .staff__card {
@@ -286,15 +315,19 @@ a {
 .staff__picture {
   width: 270px;
   height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .staff__picture-image {
   display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .staff__information {
   text-align: left;
+  max-width: 265px;
 }
 
 .staff__name {
@@ -314,6 +347,8 @@ a {
 
 .staff__social-icons {
   margin-top: 31px;
+  padding-inline-start: 0px;
+  padding-bottom: 101px;
 }
 
 .staff__social-icons-item {
@@ -323,11 +358,38 @@ a {
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin: 0 4px;
 }
 
 .staff__social-icon {
   color: lightgrey;
+}
+
+.staff__social-icon:hover {
+  transition-property: color;
+  color: grey;
+  transform: scale(1.2);
+}
+
+.staff__social-icon:visited {
+  transition-property: color;
+  columns: #000000;
+}
+
+.staff__social-icon .fa-facebook-f {
+  padding: 0 16px;
+}
+
+.staff__social-icon .fa-twitter {
+  padding: 0 10px;
+}
+
+.staff__social-icon .fa-linkedin {
+  padding: 0 12px;
+}
+
+.clients {
+  width: 100%;
 }
 
 .testimonial {
@@ -347,7 +409,6 @@ a {
 .clients__picture-img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 .testimonial__text {
@@ -356,13 +417,13 @@ a {
 }
 
 .testimonial__text-text {
-  width: 500px;
+  max-width: 500px;
   font-family: "Cardo";
   font-size: 36px;
   font-style: italic;
   line-height: 42px;
   color: #ffffff;
-  margin: 114px 0 30px 85px;
+  margin: 114px 0px 30px 85px;
 }
 
 .testimonial__text-client-name {
@@ -422,8 +483,8 @@ a {
 .clients__slider .slick-dots {
   display: flex;
   position: absolute;
-  bottom: 20%;
-  left: calc(50% + 289px);
+  bottom: 35%;
+  left: calc(50% + 185px);
 }
 
 .clients__slider .slick-dots li {
@@ -451,6 +512,10 @@ a {
   opacity: 1;
 }
 
+.diwnload {
+  width: 100%;
+}
+
 .download__content {
   display: flex;
   flex-direction: column;
@@ -476,6 +541,20 @@ a {
   margin: 24px auto;
 }
 
+.download__button:hover {
+  animation: blink 2s 0.5s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    background-color: #e84545;
+    color: #ffffff;
+  }
+  to {
+    background-color: #ffffff;
+    color: #e84545;
+  }
+}
 @font-face {
   font-family: "Webdings";
   src: url("/fonts/webdings.ttf");
@@ -487,7 +566,8 @@ a {
 .about {
   width: 100%;
   background-color: #3a3e64;
-  padding: 76px 0 88px 0;
+  padding: 71px 0 88px 0;
+  margin-top: 76px;
 }
 
 .information-container {
@@ -541,17 +621,22 @@ a {
 
 .footer__social-icon {
   color: #ffffff;
+  transition-property: all linear 0.5s;
 }
 
-.fa-facebook-f {
+.footer__social-icon:hover {
+  transform: scaleY(1.5);
+}
+
+.footer__social-icon .fa-facebook-f {
   padding: 0 16px;
 }
 
-.fa-twitter {
+.footer__social-icon .fa-twitter {
   padding: 0 10px;
 }
 
-.fa-linkedin {
+.footer__social-icon .fa-linkedin {
   padding: 0 12px;
 }
 
@@ -602,4 +687,9 @@ a {
   color: #ffffff;
   font-family: "Raleway";
   font-style: normal;
+}
+
+.copyright__creator-ownpage:hover {
+  transition-property: font-style;
+  font-style: italic;
 }

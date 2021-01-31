@@ -9,14 +9,14 @@
 .about {
   width: 100%;
   background-color: #3a3e64;
-  padding: 76px 0 88px 0;
+  padding: 71px 0 88px 0;
+  margin-top: 76px;
 }
 .information-container {
   display: flex;
   justify-content: space-around;
   margin: 0 -15px;
   padding-left: 150px;
-
 }
 .location {
   width: 150px;
@@ -35,7 +35,6 @@
 .social {
   text-align: center;
   margin: 0 15px;
-  
 }
 .social__title {
   text-transform: uppercase;
@@ -57,19 +56,25 @@
   margin: 0 3.5px;
   text-align: center;
 }
-
+// .footer__social-icons-item:hover {
+//   transform: scale(1.2);
+// }
 .footer__social-icon {
   color: #ffffff;
+  transition-property: all linear 0.5s;
 }
-.fa-facebook-f {
+.footer__social-icon:hover {
+  transform: scaleY(1.5);
+}
+.footer__social-icon .fa-facebook-f {
   padding: 0 16px;
 }
 
-.fa-twitter {
+.footer__social-icon .fa-twitter {
   padding: 0 10px;
 }
 
-.fa-linkedin {
+.footer__social-icon .fa-linkedin {
   padding: 0 12px;
 }
 .about-activebox {
@@ -111,4 +116,8 @@
   color: #ffffff;
   font-family: 'Raleway';
   font-style: normal;
+}
+.copyright__creator-ownpage:hover {
+  transition-property: font-style;
+  font-style: italic;
 }
