@@ -9,6 +9,14 @@
   justify-content: space-around;
   flex-wrap: nowrap;
 }
+@media (max-width: 1170px) {
+  .staff__table {
+    display: none;
+  }
+  .staff__slider {
+    display: block;
+  }
+}
 .staff__card {
   margin: 0 15px;
 }
@@ -26,6 +34,11 @@
 .staff__information {
   text-align: left;
   max-width: 265px;
+}
+@media (max-width: 1170px) {
+  .staff__information {
+    text-align: center;
+  }
 }
 .staff__name {
   color: #2d3033;
@@ -45,7 +58,11 @@
   padding-inline-start: 0px;
   padding-bottom: 101px;
 }
-
+@media (max-width: 1170px) {
+  .staff__social-icons {
+    display: flex;
+    justify-items: center;
+}
 .staff__social-icons-item {
   width: 40px;
   height: 40px;
@@ -77,4 +94,42 @@
 }
 .staff__social-icon .fa-linkedin {
   padding: 0 12px;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+}
+.staff__slider {
+  position: relative;
+  padding-top: 100px;
+}
+.staff__slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.staff__slider .slick-dots li {
+  list-style: none;
+  margin: 0 8px;
+}
+.staff__slider .slick-dots {
+  display: flex;
+  position: absolute;
+  top: 95px;
+  left: calc(50% - 50px);
+}
+.staff__slider .slick-dots button {
+  font-size: 0px;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  opacity: 0.5;
+}
+.staff__slider .slick-dots button:focus {
+  opacity: 1;
 }
