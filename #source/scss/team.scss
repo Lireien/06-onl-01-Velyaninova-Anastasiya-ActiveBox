@@ -4,7 +4,7 @@
 .staff__table {
   display: flex;
   flex-direction: row;
-  margin: 0 -15px;
+  // margin: 0 -15px;
   padding-top: 100px;
   justify-content: space-around;
   flex-wrap: nowrap;
@@ -17,12 +17,13 @@
     display: block;
   }
 }
+
 .staff__card {
   margin: 0 15px;
 }
 .staff__picture {
   width: 270px;
-  height: 270px;
+  // height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,8 +61,8 @@
 }
 @media (max-width: 1170px) {
   .staff__social-icons {
-    display: flex;
-    justify-items: center;
+    padding-inline-start: 60px;
+  }
 }
 .staff__social-icons-item {
   width: 40px;
@@ -95,16 +96,22 @@
 .staff__social-icon .fa-linkedin {
   padding: 0 12px;
 }
+.staff__slider {
+  position: relative;
+  padding-top: 100px;
+}
+@media (min-width: 1171px) {
+  .staff__slider {
+    display: none;
+  }
+}
 .slick-list {
   overflow: hidden;
 }
 .slick-track {
   display: flex;
 }
-.staff__slider {
-  position: relative;
-  padding-top: 100px;
-}
+
 .staff__slider-item {
   display: flex;
   flex-direction: column;

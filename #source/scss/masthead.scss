@@ -7,10 +7,6 @@
   flex-direction: column;
   width: 100%;
 }
-.header {
-  width: 100%;
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -48,7 +44,6 @@
 }
 .navigation__menu-link:hover {
   opacity: 1;
-  
 }
 
 /* Гамбургер-меню  */
@@ -143,7 +138,6 @@
   align-self: center;
   justify-content: center;
   margin: auto;
-  width: 100%;
 }
 .masthead__title {
   color: #ffffff;
@@ -163,7 +157,7 @@
   max-width: 200px;
   margin: 37px auto;
 }
-.masthead__button:hover{
+.masthead__button:hover {
   animation: blink 2s 0.5s infinite alternate;
 }
 @keyframes blink {

@@ -107,10 +107,6 @@ a {
   width: 100%;
 }
 
-.header {
-  width: 100%;
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -160,7 +156,6 @@ a {
   align-self: center;
   justify-content: center;
   margin: auto;
-  width: 100%;
 }
 
 .masthead__title {
@@ -302,7 +297,6 @@ a {
 .staff__table {
   display: flex;
   flex-direction: row;
-  margin: 0 -15px;
   padding-top: 100px;
   justify-content: space-around;
   flex-wrap: nowrap;
@@ -323,7 +317,6 @@ a {
 
 .staff__picture {
   width: 270px;
-  height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,7 +360,7 @@ a {
 
 @media (max-width: 1170px) {
   .staff__social-icons {
-    justify-self: center;
+    padding-inline-start: 60px;
   }
 }
 .staff__social-icons-item {
@@ -407,17 +400,22 @@ a {
   padding: 0 12px;
 }
 
+.staff__slider {
+  position: relative;
+  padding-top: 100px;
+}
+
+@media (min-width: 1171px) {
+  .staff__slider {
+    display: none;
+  }
+}
 .slick-list {
   overflow: hidden;
 }
 
 .slick-track {
   display: flex;
-}
-
-.staff__slider {
-  position: relative;
-  padding-top: 100px;
 }
 
 .staff__slider-item {
@@ -462,15 +460,27 @@ a {
   display: flex;
 }
 
+@media (max-width: 810px) {
+  .testimonial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .clients__picture {
-  width: 50%;
-  height: 500px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
 
+@media (max-width: 810px) {
+  .clients__picture {
+    width: 100%;
+  }
+}
 .clients__picture-img {
   display: block;
   width: 100%;
@@ -478,11 +488,18 @@ a {
 }
 
 .testimonial__text {
+  display: flex;
+  flex-direction: column;
   background-color: #53354a;
   width: 50%;
-  height: 500px;
 }
 
+@media (max-width: 810px) {
+  .testimonial__text {
+    width: 100%;
+    text-align: center;
+  }
+}
 .testimonial__text-text {
   max-width: 500px;
   font-family: "Cardo";
@@ -490,9 +507,27 @@ a {
   font-style: italic;
   line-height: 42px;
   color: #ffffff;
-  margin: 114px 0px 30px 85px;
+  margin: 80px 0px 30px 85px;
 }
 
+@media (max-width: 1400px) {
+  .testimonial__text-text {
+    font-size: 32px;
+    margin: 40px 0px 10px 20px;
+  }
+}
+@media (max-width: 955px) {
+  .testimonial__text-text {
+    font-size: 26px;
+    margin: 20px 0px 10px 20px;
+  }
+}
+@media (max-width: 810px) {
+  .testimonial__text-text {
+    font-size: 20px;
+    margin: 20px auto;
+  }
+}
 .testimonial__text-client-name {
   color: #ffffff;
   font-weight: 700;
@@ -500,6 +535,16 @@ a {
   margin-left: 85px;
 }
 
+@media (max-width: 1400px) {
+  .testimonial__text-client-name {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 810px) {
+  .testimonial__text-client-name {
+    padding-bottom: 10px;
+  }
+}
 .slick-list {
   overflow: hidden;
 }
@@ -513,40 +558,6 @@ a {
   padding-bottom: 100px;
 }
 
-.clients__slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  z-index: 10000000;
-  width: 40px;
-  height: 40px;
-}
-
-.clients__slider .slick-prev {
-  left: 0px;
-  background: url(/img/Clients/backarrow.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: 0px;
-}
-
-.clients__slider .slick-next {
-  right: 0;
-  background: url(/img/Clients/forwardarrow.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: transparent;
-}
-
-.client__slider .button {
-  padding: 0;
-  border: none;
-  font-size: 0px;
-  color: inherit;
-  background-color: transparent;
-  border-width: 0;
-  border-style: none;
-}
-
 .clients__slider .slick-dots {
   display: flex;
   position: absolute;
@@ -554,6 +565,25 @@ a {
   left: calc(50% + 185px);
 }
 
+@media (max-width: 1170px) {
+  .clients__slider .slick-dots {
+    bottom: 35%;
+  }
+}
+@media (max-width: 810px) {
+  .clients__slider .slick-dots {
+    position: absolute;
+    left: 40%;
+    top: 1%;
+  }
+
+  .clients__slider .slick-dots button {
+    background-color: #000000;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    opacity: 0.4;
+  }
+}
 .clients__slider .slick-dots li {
   list-style: none;
   margin: 0 8px;
