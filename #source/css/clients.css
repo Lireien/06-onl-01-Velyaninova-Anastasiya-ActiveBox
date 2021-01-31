@@ -1,6 +1,5 @@
 .testimonial {
   display: flex;
-  flex-direction: row;
 }
 
 .clients__picture {
