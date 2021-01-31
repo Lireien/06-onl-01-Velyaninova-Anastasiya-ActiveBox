@@ -3,12 +3,16 @@ $(document).ready(function(){
         arrows:false,
         dots: true,
         speed:2000,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed:3000,
     });
     $('.staff__slider').slick({
         dots:true,
         arrows:false,
         
+    });
+    $('.project__slider').slick({
+        arrows:false,
+        dots: true
     })
 });

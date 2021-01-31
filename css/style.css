@@ -237,6 +237,11 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 810px) {
+  .projects-static {
+    display: none;
+  }
+}
 .project__picture {
   display: flex;
   flex-direction: column;
@@ -246,6 +251,11 @@ a {
   position: relative;
 }
 
+@media (max-width: 810px) {
+  .project__picture {
+    width: 100%;
+  }
+}
 .project__picture-img {
   display: block;
   width: 100%;
@@ -286,8 +296,42 @@ a {
   color: #ffffff;
 }
 
-.project-sliders {
+.project__slider {
   display: none;
+  position: relative;
+}
+
+@media (max-width: 810px) {
+  .project__slider {
+    display: block;
+  }
+}
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.project__slider .slick-dots {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project__slider .slick-dots li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.project__slider .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #000000;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  opacity: 0.5;
 }
 
 .team {
@@ -625,6 +669,7 @@ a {
   font-size: 28px;
   font-weight: 300;
   line-height: 21px;
+  margin-top: 5px;
 }
 
 .download__subtitle {
@@ -669,13 +714,19 @@ a {
 
 .information-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 -15px;
-  padding-left: 150px;
 }
 
+@media (max-width: 640px) {
+  .information-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .location {
-  width: 150px;
+  max-width: 150px;
   text-align: center;
   margin: 0 15px;
 }
@@ -696,6 +747,11 @@ a {
   margin: 0 15px;
 }
 
+@media (max-width: 640px) {
+  .social {
+    margin-top: 20px;
+  }
+}
 .social__title {
   text-transform: uppercase;
   color: #ffffff;
@@ -738,11 +794,16 @@ a {
 }
 
 .about-activebox {
-  width: 328px;
+  max-width: 328px;
   text-align: center;
   margin: 0 15px;
 }
 
+@media (max-width: 640px) {
+  .about-activebox {
+    margin-top: 20px;
+  }
+}
 .about-activebox__title {
   text-transform: uppercase;
   color: #ffffff;

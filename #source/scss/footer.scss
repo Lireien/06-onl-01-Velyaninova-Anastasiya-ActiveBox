@@ -14,12 +14,19 @@
 }
 .information-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 -15px;
-  padding-left: 150px;
+  
+}
+@media (max-width:640px){
+  .information-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .location {
-  width: 150px;
+  max-width: 150px;
   text-align: center;
   margin: 0 15px;
 }
@@ -35,6 +42,11 @@
 .social {
   text-align: center;
   margin: 0 15px;
+}
+@media (max-width:640px){
+  .social{
+    margin-top: 20px;
+  }
 }
 .social__title {
   text-transform: uppercase;
@@ -78,9 +90,14 @@
   padding: 0 12px;
 }
 .about-activebox {
-  width: 328px;
+  max-width: 328px;
   text-align: center;
   margin: 0 15px;
+}
+@media (max-width:640px){
+  .about-activebox{
+    margin-top: 20px;
+  }
 }
 .about-activebox__title {
   text-transform: uppercase;

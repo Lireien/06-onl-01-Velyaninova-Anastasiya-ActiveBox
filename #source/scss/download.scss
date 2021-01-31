@@ -12,6 +12,7 @@
   font-size: 28px;
   font-weight: 300;
   line-height: 21px;
+  margin-top: 5px;
 }
 .download__subtitle {
   color: #2d3033;
@@ -23,6 +24,7 @@
   width: 280px;
   margin: 24px auto;
 }
+
 .download__button:hover {
   animation: blink 2s 0.5s infinite alternate;
 }
