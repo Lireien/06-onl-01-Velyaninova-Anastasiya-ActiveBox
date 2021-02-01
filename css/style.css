@@ -61,6 +61,11 @@ h3 {
   line-height: normal;
 }
 
+@media (max-width: 410px) {
+  h3 {
+    font-size: 0.8125rem;
+  }
+}
 h4 {
   font-family: "Raleway";
   font-weight: 400;
@@ -77,6 +82,11 @@ p {
   line-height: 21px;
 }
 
+@media (max-width: 410px) {
+  p {
+    font-size: 0.8125rem;
+  }
+}
 a {
   text-decoration: none;
   cursor: pointer;
