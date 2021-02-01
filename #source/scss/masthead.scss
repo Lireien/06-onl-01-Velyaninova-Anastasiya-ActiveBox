@@ -17,14 +17,22 @@
   position: relative;
   z-index: 2;
 }
+@media(max-width:767px){
+  .header__container{
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .logo {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .logo__img {
   padding: 38px 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 514px) {
   .navigation {
     display: none;
   }
@@ -35,6 +43,13 @@
   flex-direction: row;
   align-items: center;
   padding: 45px 0;
+}
+@media(max-width:767px){
+  .navigation__menu{
+    align-self: center;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
 }
 
 .navigation__menu-item {

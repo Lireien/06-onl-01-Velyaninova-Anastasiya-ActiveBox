@@ -128,7 +128,14 @@ a {
   z-index: 2;
 }
 
+@media (max-width: 767px) {
+  .header__container {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 .logo {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -137,7 +144,7 @@ a {
   padding: 38px 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 514px) {
   .navigation {
     display: none;
   }
@@ -150,6 +157,13 @@ a {
   padding: 45px 0;
 }
 
+@media (max-width: 767px) {
+  .navigation__menu {
+    align-self: center;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+}
 .navigation__menu-item {
   list-style: none;
   margin: 0 15px;
@@ -616,7 +630,7 @@ a {
 }
 @media (max-width: 810px) {
   .testimonial__text-client-name {
-    padding-bottom: 10px;
+    margin-bottom: 40px;
   }
 }
 .slick-list {
@@ -647,15 +661,8 @@ a {
 @media (max-width: 810px) {
   .clients__slider .slick-dots {
     position: absolute;
-    left: 40%;
-    top: 1%;
-  }
-
-  .clients__slider .slick-dots button {
-    background-color: #000000;
-    border-radius: 50%;
-    border: 1px solid #000000;
-    opacity: 0.4;
+    left: calc(50% - 70px);
+    bottom: calc(100px + 2%);
   }
 }
 .clients__slider .slick-dots li {
@@ -680,7 +687,7 @@ a {
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid #ffffff;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .diwnload {
@@ -886,11 +893,23 @@ a {
   color: #808080;
 }
 
+@media (max-width: 410px) {
+  .copyright__info {
+    margin-top: 14px;
+    font-size: 12px;
+  }
+}
 .copyright__creator {
   color: #808080;
   margin-bottom: 29px;
 }
 
+@media (max-width: 410px) {
+  .copyright__creator {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+}
 .copyright__heart {
   font-family: "Webdings";
   color: #e84545;

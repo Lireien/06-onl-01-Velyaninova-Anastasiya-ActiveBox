@@ -140,9 +140,21 @@
   margin-top: 29px;
   color: #808080;
 }
+@media (max-width:410px){
+  .copyright__info{
+    margin-top: 14px;
+    font-size: 12px;
+  }
+}
 .copyright__creator {
   color: #808080;
   margin-bottom: 29px;
+}
+@media (max-width:410px){
+  .copyright__creator{
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
 }
 .copyright__heart {
   font-family: 'Webdings';
