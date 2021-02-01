@@ -35,6 +35,11 @@ h1 {
   line-height: 71px;
 }
 
+@media (max-width: 410px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 h2 {
   font-family: "Raleway";
   font-weight: 400;
@@ -43,6 +48,11 @@ h2 {
   line-height: 33px;
 }
 
+@media (max-width: 410px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
 h3 {
   font-family: "Raleway";
   font-weight: 700;
@@ -193,6 +203,11 @@ a {
   margin: 37px auto;
 }
 
+@media (max-width: 410px) {
+  .masthead__button {
+    max-width: 90%;
+  }
+}
 .masthead__button:hover {
   animation: blink 2s 0.5s infinite alternate;
 }
@@ -207,31 +222,6 @@ a {
     color: #e84545;
   }
 }
-.header__list li {
-  list-style: none;
-  margin-left: 20px;
-}
-
-.header__list {
-  display: flex;
-}
-
-.header__list-link {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 13px;
-  font-style: normal;
-  opacity: 0.75;
-  color: #ffffff;
-  text-align: left;
-  text-transform: uppercase;
-  transition: linear 1s;
-}
-
-.header-burger {
-  display: none;
-}
-
 .features {
   width: 100%;
 }
@@ -712,6 +702,11 @@ a {
   margin-top: 5px;
 }
 
+@media (max-width: 652px) {
+  .download__title {
+    line-height: 28px;
+  }
+}
 .download__subtitle {
   color: #2d3033;
   font-weight: 700;
@@ -752,6 +747,11 @@ a {
   margin-top: 76px;
 }
 
+@media (max-width: 640px) {
+  .about {
+    padding: 30px 0 30px 0;
+  }
+}
 .information-container {
   display: flex;
   justify-content: space-between;
@@ -777,6 +777,11 @@ a {
   padding-bottom: 22px;
 }
 
+@media (max-width: 640px) {
+  .location__title {
+    padding-bottom: 11px;
+  }
+}
 .location__info {
   color: #ffffff50;
   line-height: 22.5px;
@@ -789,7 +794,7 @@ a {
 
 @media (max-width: 640px) {
   .social {
-    margin-top: 20px;
+    margin-top: 35px;
   }
 }
 .social__title {
@@ -798,6 +803,11 @@ a {
   padding-bottom: 21px;
 }
 
+@media (max-width: 640px) {
+  .social__title {
+    padding-bottom: 11px;
+  }
+}
 .footer__social-icons {
   padding-inline-start: 0px;
 }
@@ -841,7 +851,7 @@ a {
 
 @media (max-width: 640px) {
   .about-activebox {
-    margin-top: 20px;
+    margin-top: 35px;
   }
 }
 .about-activebox__title {
@@ -850,6 +860,11 @@ a {
   padding-bottom: 21px;
 }
 
+@media (max-width: 640px) {
+  .about-activebox__title {
+    padding-bottom: 11px;
+  }
+}
 .about-activebox__text {
   color: #ffffff50;
 }

@@ -14,6 +14,11 @@
   line-height: 21px;
   margin-top: 5px;
 }
+@media (max-width:652px){
+  .download__title{
+    line-height: 28px;
+  }
+}
 .download__subtitle {
   color: #2d3033;
   font-weight: 700;
