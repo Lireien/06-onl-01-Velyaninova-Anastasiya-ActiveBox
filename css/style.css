@@ -672,7 +672,7 @@ a {
   .clients__slider .slick-dots {
     position: absolute;
     left: calc(50% - 70px);
-    bottom: calc(100px + 2%);
+    bottom: calc(100px + 3%);
   }
 }
 .clients__slider .slick-dots li {
@@ -773,13 +773,19 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 0 -15px;
+  padding-left: 140px;
 }
-
+@media (max-width: 810px){
+  .information-container{
+    padding-left: 100px;
+  }
+}
 @media (max-width: 640px) {
   .information-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 0px;
   }
 }
 .location {
@@ -861,7 +867,7 @@ a {
 }
 
 .about-activebox {
-  max-width: 328px;
+  width: 328px;
   text-align: center;
   margin: 0 15px;
 }
