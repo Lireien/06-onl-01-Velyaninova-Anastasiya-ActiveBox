@@ -18,4 +18,9 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     });
+    $('.header__burger').click(function(event){
+        $('.header__burger,.burger__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+    
 });
