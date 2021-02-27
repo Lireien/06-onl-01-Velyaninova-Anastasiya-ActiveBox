@@ -35,7 +35,7 @@ h1 {
   line-height: 71px;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 3rem;
   }
@@ -327,7 +327,7 @@ a {
   }
 }
 .masthead__button:hover {
-  animation: blink 2s 0.5s infinite alternate;
+  animation: blink 1s 0.2s infinite alternate;
 }
 
 @keyframes blink {
@@ -342,6 +342,8 @@ a {
 }
 .features {
   width: 100%;
+  padding-top: 47px;
+  padding-bottom: 124px;
 }
 
 .features__card-box {
@@ -349,7 +351,7 @@ a {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 47px -15px 124px -15px;
+  margin: 0px -15px 0px -15px;
 }
 
 .features__card {
@@ -465,6 +467,7 @@ a {
 .project__slider .slick-dots {
   display: flex;
   justify-content: space-around;
+  padding: 0 180px;
 }
 
 .project__slider .slick-dots li {
@@ -625,7 +628,7 @@ a {
 .staff__slider .slick-dots {
   display: flex;
   position: absolute;
-  top: 95px;
+  top: 89%;
   left: calc(50% - 50px);
 }
 
@@ -633,7 +636,7 @@ a {
   font-size: 0px;
   width: 12px;
   height: 12px;
-  background-color: #ffffff;
+  background-color: lightgray;
   border-radius: 50%;
   border: 1px solid #000000;
   opacity: 0.5;
@@ -765,7 +768,7 @@ a {
 
 @media (max-width: 1170px) {
   .clients__slider .slick-dots {
-    bottom: 8%;
+    bottom: 9%;
   }
 }
 @media (max-width: 810px) {
@@ -838,7 +841,7 @@ a {
 }
 
 .download__button:hover {
-  animation: blink 2s 0.5s infinite alternate;
+  animation: blink 1s 0.2s infinite alternate;
 }
 
 @keyframes blink {
